@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDISELVA</title>
+    <link rel="stylesheet" href="css/estilos.css">>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagen/credi_selva-removebg-preview.png" alt="logo crediselva">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">RESEÑAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tipos-de-prestamos">
+        <h2>Tipos de Préstamos</h2>
+
+        <div class="prestamo">
+            <h3 onclick="toggleMenu(this)">Préstamo Rápido</h3>
+            <div class="contenido">
+                <p>Este tipo de préstamo se otorga en cuestión de minutos...</p>
+            </div>
+        </div>
+
+        <div class="prestamo">
+            <h3 onclick="toggleMenu(this)">Préstamos en Cuotas</h3>
+            <div class="contenido">
+                <p>Permite pagar en cuotas fijas durante un período determinado...</p>
+            </div>
+        </div>
+
+        <div class="prestamo">
+            <h3 onclick="toggleMenu(this)">Préstamo Grupal</h3>
+            <div class="contenido">
+                <p>Ideal para grupos de personas que buscan financiamiento en conjunto...</p>
+            </div>
+        </div>
+
+        <div class="prestamo">
+            <h3 onclick="toggleMenu(this)">Empeño</h3>
+            <div class="contenido">
+                <p>Requiere dejar un objeto de valor como garantía...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="nosotros">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Simulador</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Ubicación</a></li>
+            </ul>
+        </div>
+        <div class="servicios">
+            <h3>Servicios</h3>
+            <ul>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="reseñas">
+            <h3>Reseñas</h3>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu(element) {
+            let contenido = element.nextElementSibling;
+            contenido.style.display = contenido.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
